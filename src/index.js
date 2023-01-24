@@ -6,7 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./store";
 import { Provider } from "react-redux";
 
-store.subscribe(() => console.log(store.getstate()));
+store.subscribe(() => { return 
+  console.log(store.getstate())
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
